@@ -13,4 +13,4 @@ Resources:
           Type: Api
           Properties:
             Path: /TimeResource
-            Method: GET
+            Method: ANY
