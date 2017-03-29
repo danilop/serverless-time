@@ -8,6 +8,9 @@ Resources:
       Handler: index.handler
       Runtime: nodejs6.10
       CodeUri: ./
+      Environment:
+        Variables:
+          TIMEZONE: Europe/London
       Events:
         MyTimeApi:
           Type: Api

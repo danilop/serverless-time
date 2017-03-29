@@ -1,10 +1,13 @@
-var time = require('time');
+"use strict";
+
+const time = require('time');
+const timezone = process.env.TIMEZONE;
 
 exports.handler = (event, context, callback) => {
     var currentTime = new time.Date(); 
-    currentTime.setTimezone("Europe/London");
+    currentTime.setTimezone(timezone);
     callback(null, {
         statusCode: '200',
-        body: 'The time in London, UK is: ' + currentTime.toString(),
+        body: 'The time in ' + timezone + ' is: ' + currentTime.toString(),
     });
 };
