@@ -8,6 +8,6 @@ exports.handler = (event, context, callback) => {
     currentTime.setTimezone(timezone);
     callback(null, {
         statusCode: '200',
-        body: 'The time in ' + timezone + ' is: ' + currentTime.toString(),
+        body: 'The time in ' + timezone + ' is ' + currentTime.toString(),
     });
 };
