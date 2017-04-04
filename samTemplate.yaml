@@ -10,7 +10,7 @@ Resources:
       CodeUri: ./
       Environment:
         Variables:
-          TIMEZONE: Europe/Rome
+          TIMEZONE: Europe/Dublin
       Events:
         MyTimeApi:
           Type: Api
